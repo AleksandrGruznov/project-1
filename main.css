@@ -11,7 +11,7 @@ p {
 }
 
 img {
-  display: block;
+  display: inline-block;
   /* max-width: 100%; */
 }
 
@@ -22,7 +22,7 @@ body {
   font-size: 16px;
   line-height: 1, 42;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothimg: antialiased;
+  -webkit-font-smoothing: antialiased;
   margin: 0;
 }
 
@@ -138,11 +138,13 @@ h6 {
 .contacts__dropdown-title {
   font-size: 13px;
   text-decoration: underline;
+  display: block;
 }
 
 .contacts__info {
   color: #9A9A9A;
   font-size: 11px;
+  display: block;
 }
 
 .main {
@@ -265,16 +267,33 @@ h6 {
 
 .offer__features {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   color: #666666;
   font-style: 16px;
+  justify-content: space-between;
 }
 
 .offer__future {
-  /* display: flex;
-  justify-content: space-between; */
+  /* display: flex; */
+  /* justify-content: space-between; */
   margin-right: 25px;
+}
+
+.offer__features-left, .offer__features-right {
+  display: flex;
+  align-items: center;
+}
+
+.offer__features-left {
+margin-left: 6px;
+}
+
+.offer__features-right {
+  margin-right: 39px;
+}
+
+.offer__future-cal, .offer__future-meal {
+  margin-right: 10px;
 }
 
 .offer__text {
@@ -586,16 +605,12 @@ h6 {
 .breadcrumbs__list {
   color: #9A9A9A;
   font-size: 14px;
-}
-
-.breadcrumbs__item {
   display: flex;
-  align-items: center;
-  /* display: inline; */
 }
 
-.breadcrumbs__item--active .breadcrumbs__link {
+.breadcrumbs__item--active {
   font-weight: bold;
+  text-decoration: underline;
 }
 
 .breadcrumbs__item:after {
@@ -614,7 +629,7 @@ h6 {
 }
 
 .services {
-  margin-bottom: 60px;
+  margin-bottom: 8px;
 }
 
 .service {
@@ -670,7 +685,7 @@ h6 {
 .inner-section {
   background: #fff;
   color: #1A1B1E;
-  padding: 95px 0;
+  padding-top: 80px;
 }
 
 .inner-section--bg--grey {
@@ -680,14 +695,14 @@ h6 {
 .inner-section__title {
   font-size: 48px;
   font-weight: bold;
-  margin-bottom: 75px;
+  margin-bottom: 58px;
 }
 
 .partners__link {
   text-decoration: none;
   display: flex;
   width: 250px;
-  height: 100px;
+  height: 128px;
   align-items: center;
   justify-content: center;
 }
@@ -699,6 +714,7 @@ h6 {
 .partners {
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 72px;
 }
 
 .partners__item {
