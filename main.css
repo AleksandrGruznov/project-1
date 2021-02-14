@@ -147,6 +147,17 @@ h6 {
   display: block;
 }
 
+.contact__dropdown {
+background: #EDEDED;
+opacity: 0.8;
+border-radius: 4px;
+padding: 16px 20px;
+color: #1E1F20;
+/* width: 157px; */
+text-align: left;
+font-size: 13px;
+}
+
 .main {
   flex: 1;
 }
@@ -709,6 +720,7 @@ margin-left: 6px;
 
 .partners__link:hover {
   filter: grayscale(100%);
+  transition: filter 1s;
 }
 
 .partners {
@@ -723,4 +735,115 @@ margin-left: 6px;
 
 .partners__item:nth-child(4n+1) {
   margin-left: 0;
+}
+
+/* review */
+
+.page-content-review {
+background: #fff;
+}
+
+.reviews {
+  column-count: 2;
+  column-gap: 30px;
+  margin-bottom: 70px;
+}
+
+.reviews__item {
+  margin-bottom: 20px;
+}
+
+.review {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 50px 30px;
+  background: #F4F5F5;
+}
+
+.review__header {
+display: flex;
+align-items: center;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  overflow: hidden;
+}
+
+.review__userdata {
+margin-left: 23px;
+}
+
+.review__user {
+  display: flex;
+align-items: center;
+font-size: 24px;
+font-weight: bold;
+color: #2E77A4;
+margin-bottom: 6px;
+}
+
+.review__user:after {
+  content: url("./img/icon/vk-blue.png");
+  height: 30px;
+}
+
+.review__tags {
+display: flex;
+align-items: flex-start;
+}
+
+.tag {
+  font-size: 13px;
+  color: #303030;
+  border-radius: 50px;
+  padding: 8px 16px;
+  background: #E7E7E7;
+  margin-bottom: 30px;
+}
+
+.tag--background--color {
+background: #B9EAE4;
+}
+
+.review__header {
+display: flex;
+align-items: center;
+margin-bottom: 30px;
+}
+
+.review__title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #1A1B1E;
+  margin-bottom: 24px;
+}
+
+.review__text {
+  margin-bottom: 50px;
+  color: #818181;
+}
+
+.review__date {
+color: #1A1B1E;
+font-size: 14px;
+/* font-weight: semibold; */
+}
+
+.separator {
+  background: url("./img/background/Rectangle.png") center center no-repeat, url("./img/avatars/couple.png");
+  min-height: 363px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.separator__content {
+max-width: 50%;
+}
+
+.separator__title {
+  
 }
